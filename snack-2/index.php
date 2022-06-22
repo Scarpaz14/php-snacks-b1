@@ -10,6 +10,7 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && strlen($name > 3) && is_numeric(
     echo 'accesso negato';
 }
 
+
 ?>
 
 <!DOCTYPE html>
@@ -21,18 +22,12 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && strlen($name > 3) && is_numeric(
     <title>Document</title>
 </head>
 <body>
-    <!-- <form action="" method="GET">
+    <form action="" method="GET">
             <input type="text" placeholder="name" name="name">
-            <button type="submit">invio</button>
-    </form>
-    <form action="" method="GET">
             <input type="text" placeholder="email" name="email">
-            <button type="submit">invio</button>
-    </form>
-    <form action="" method="GET">
             <input type="text" placeholder="age" name="age">
             <button type="submit">invio</button>
-    </form> -->
+    </form>
         
     <h3><?php echo 'nome: ' . $name; ?></h3>
     <h3><?php echo 'indirizzo email: ' . $email; ?></h3>
